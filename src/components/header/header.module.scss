@@ -1,0 +1,118 @@
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.header__block{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 199;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Применение тени с z-index */
+}
+
+.menu__link{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px; 
+    align-items: center;
+    text-align: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+
+    font-family: 'Raleway', 'sans-serif';
+    text-decoration: none;
+    color: #000;
+}
+
+
+.burgerIcon {
+    display: none; 
+    cursor: pointer;
+}
+
+
+.toLinkDiscount{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color:#FF5050;
+}
+
+
+
+@media (min-width: 405px) and (max-width: 648px) {
+    
+    .nav{
+        position: absolute;
+        top: 0; 
+        z-index: 1000;
+        left: -255px;
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+
+        // height: 100%;/
+        height: 100vh;
+        background-color: #fff;
+        border: 2px solid #e76712;
+        transition: transform 0.3s linear;
+        display: none;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    .nav.active{
+        transform: translateX(100%);
+        display: block;
+    }
+    
+
+    .nav__link{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .nav__link:nth-child(n + 2){
+        margin-left: 0;
+    }
+
+    .burgerIcon {
+        display: block; 
+        cursor: pointer;
+        margin-left: auto;
+        font-size: 25px;
+        padding: 12px 12px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: #FF5050;
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    .menu__link{
+        padding: 15px 30px; 
+        
+    }
+    
+
+}
+  

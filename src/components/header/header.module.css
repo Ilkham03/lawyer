@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Применение тени с z-index */
+}
+
+.menu__link {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 20px;
+  font-family: "Raleway", "sans-serif";
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=header.module.css.map */

@@ -1,0 +1,61 @@
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.form__block p{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    color: #1A1A1A99;
+}
+
+.form__block h3{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1A1A1A99;
+    padding: 5px 0;
+}
+
+.form__content{
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.form__inner{
+    padding: 20px 20px;
+}
+
+.form__head{
+    color: #212121;
+    font-family: Arial;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+// field
+.field__title{
+    padding: 7px 0;
+}
+
+.value textarea{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.submit__btn{
+    background-image: linear-gradient(180deg,#2f77f5,#15c);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 8px 16px;
+    margin-top: 18px;
+}
