@@ -4,25 +4,6 @@
     margin: 0 auto;
 }
 
-.navigation{
-    margin: 15px 0;
-}
-
-.site__navigation span {
-    color: #1A1A1A99;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-.main__link__navigation{
-    color: #FF5050;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-
 // все title
 
 .title__main__inner{
@@ -35,78 +16,147 @@
   .title__main__title{
     font-size: 48px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #123b63;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
 
+
 // service
+
 .service__block{
-    background-color: #e5ebea;
-    height: 100%;
+    background-color: #fff;
     margin-bottom: 20px;
+    width: 100%;
+
+    display: block;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 25px;
+    border-bottom-color: rgba(var(--color-ipj0dw9ev), 0.1);
+    background-color: rgba(var(--color-ipj0dw9ev), 0.1);
+
 }
 
 .service__inner{
     padding: 20px 0;
 }
 
-.service__text{
-    line-height: 1.6em;
+// service types ===================
+.service__types{
+    padding: 60px 0;
 }
 
-.service__text h3{
-    font-family: 'Montserrat', sans-serif;
-    color: #1A1A1A99;
-    margin: 18px 0;
+.service__types__container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service__types__item{
+
+}
+
+.service__types__item:first-child::before {
+    content: "";
+    display: block;
+    height: 1px; /* Толщина линии */
+    background: linear-gradient(to right, transparent 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+}
+
+.service__types__item::after{
+    content: "";
+    display: block;
+    height: 1px; /* Толщина линии */
+    background: linear-gradient(to right, transparent 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+}
+
+
+.service__types__item__title{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px;  
+    color: #123b63;
+}
+
+.service__types__item__title h3{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.item__types__icon{
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+
+
+
+.item__types__icon{
+    font-size: 25px;
+}
+
+// type item text
+.service__types__item__text{
+    padding: 10px 0;
     font-size: 18px;
 }
-
-.service__text p{
-    font-family: 'Montserrat', sans-serif;
-    color: #1A1A1A99;
-    margin: 18px 0;
-    font-size: 18px;
-
+.strong__text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 100px 0;
 }
-
-.service__list{
-    list-style-type: disc; //li точка
-    list-style-position: inside;
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 20px;
-    line-height: 1.6em;
-    color: #1A1A1A99;
-    font-size: 18px;
-}
-
-.service__list li {
-    margin: 18px 0;
-}
-
-// lists type
-.service__type__list{
-    color: #1155CC;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-}
-.service__type__list:hover{
-    text-decoration: underline;
-}
-
-.service__type__lists{
+.service__types__item__text ul{
     list-style: none;
+    padding-left: 0;
+}
+.service__types__item__text ul li{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 1em;
+    padding: 5px 0;
 }
 
+.link__form{
+    display: flex;
+    justify-content: center;
 
-@media (min-width: 404px) and (max-width: 1000px) {  
-    .service__inner{
-        padding: 20px 20px;
+}
+
+.toForm{
+    display: flex;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #123b63;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    cursor: pointer;
+    padding: 15px 17px;
+    margin: 20px 0;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1000px) {  
+    .service__types__item{
+        padding: 20px 10px;
     }
     
+    .title__main__title{
+        font-size: 36px;
+        text-align: center;
+    }
     
 }
 

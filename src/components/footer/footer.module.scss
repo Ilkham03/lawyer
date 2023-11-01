@@ -114,10 +114,6 @@
         text-align: center;
         font-size: 18px;
     }
-    
-}
-@media (min-width: 200px) and (max-width: 991px) {
-    
     .footer__info{
         display: flex;
         flex-direction: column;
@@ -126,4 +122,6 @@
         display: flex;
         justify-content: center;
     }
+    
 }
+

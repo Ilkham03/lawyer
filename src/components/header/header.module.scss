@@ -8,9 +8,9 @@
 .header__block{    
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     position: fixed;
-    background-color: #fff;
+    background-color: #123b63;
     top: 0;
     left: 0;
     z-index: 199;
@@ -18,7 +18,7 @@
 }
 
 .menu__link{
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     padding: 15px 10px; 
     align-items: center;
@@ -26,9 +26,11 @@
     
 }
 
+
 nav{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .nav__link{
@@ -38,9 +40,24 @@ nav{
 
     font-family: 'Raleway', 'sans-serif';
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
+.specialButton {
+    padding: 7px 10px !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    border-radius: 10px;
+}
+
+.adaptive{
+    display: none;
+}
+.logo__text{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .burgerIcon {
     display: none; 
@@ -56,9 +73,17 @@ nav{
 }
 
 
+@media (max-width: 470px){
+    .phone__number{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1000px) {
+    .img__logo{
+        width: 10%;
+    }
 
-@media (min-width: 300px) and (max-width: 648px) {
-    
     .nav{
         position: absolute;
         top: 0; 
@@ -67,8 +92,6 @@ nav{
         display: flex;
         flex-direction: column;
         width: 220px;
-
-        // height: 100%;/
         height: 100vh;
         background-color: #fff;
         border: 2px solid #e76712;
@@ -90,29 +113,49 @@ nav{
         flex-direction: column;
         text-align: left;
         padding: 10px 0;
+        color: #123b63;
     }
     .nav__link:nth-child(n + 2){
         margin-left: 0;
     }
 
+    .adaptive{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
     .burgerIcon {
         display: block; 
         cursor: pointer;
-        margin-left: auto;
         font-size: 25px;
-        padding: 12px 12px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        background-color: #FF5050;
         color: #fff;
         margin-right: 15px;
     }
 
+    .info__logo{
+        display: flex;
+        align-items: center;
+    }
+    .img__logo{
+        width: 50px;
+        margin-right: 5px;
+    }
+    .info__block{
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+    }
+    .phone__number{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+
     .menu__link{
         padding: 15px 30px; 
-        
     }
-    
-
 }
   

@@ -2,17 +2,20 @@ import React from 'react'
 
 import styles from './dopinfo.module.scss'
 
+
+// import img
+import img__logo from '../../img/ElegantLogo.png'
+
 const Dopinfo = () => {
   return (
-    <div>
+    <div className={styles.dopinfo}>
       <div className={styles.container}>
             <div className={styles.info__block}>
-                <span className={styles.street__name}>г.Алматы ул.Хантау 17</span>
-                    <div className={styles.info__logo}>
-                        <h1>AUTOCONSULT.KZ</h1>
-                        <h4 >Ваш адвокат при ДТП</h4>
-                    </div>
-                <span className={styles.phone__number}>8(707)203-52-04</span>
+                <div className={styles.info__logo}>
+                    <img src={img__logo} alt="My Image" className={styles.img__logo}/>
+                    <p className={styles.logo__text}>Aripov&partners</p>
+                </div>
+                <span className={styles.phone__number}> Горячая линия: 8(702)673-05-58</span>
             </div>
         </div>
     </div>

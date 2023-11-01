@@ -11,7 +11,7 @@ import { faWhatsapp, faTelegram } from  '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <div>
-      <div className={styles.footer__block}>
+      <div id='Contact' className={styles.footer__block}>
         <div className={styles.container}>
             <div className={styles.title__main__inner}>
                 <div className={`${styles.title__main__title} ${styles.footer__title}`}>Контакты</div>
@@ -23,16 +23,16 @@ const Footer = () => {
 
             <div className={styles.footer__inner}>
                 <div className={styles.footer__info}>
-                    <div>Phone: <br/> <h4>8(707)203-52-04</h4></div>
+                    <div>Phone: <br/> <h4>8(702)673-05-58</h4></div>
                     <div>Adress: <br/> <h4>г.Алматы улица Хантау 17</h4></div>
                     
                 </div>
                 <div className={styles.footer__info}>
                     <div>Соц.сети: <br/> 
-                        <a href="whatsapp://send?phone=87072035204">
+                        <a href="https://api.whatsapp.com/send/?phone=87026730558">
                             <FontAwesomeIcon className={styles.whatsapp__icon} icon={faWhatsapp} />
                         </a>
-                        <a href="tg://resolve?domain=@ilkham03">
+                        <a href="https://t.me/@ilkham03">
                             <FontAwesomeIcon className={styles.telegram__icon}  icon={faTelegram} />
                         </a>
                     </div>                   
